@@ -8,7 +8,7 @@ metadata:
   name: "todo-gitops"
   namespace: todo
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "0"
 ---
 apiVersion: "apps/v1"
 kind: "Deployment"
@@ -19,7 +19,7 @@ metadata:
   name: "todo-gitops"
   namespace: todo
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   replicas: 1
   selector:
